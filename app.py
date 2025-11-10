@@ -6,6 +6,8 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
+nltk.download('punkt_tab')
+
 
 # --- NLTK data directory inside the repo (so it can be committed) ---
 HERE = os.path.dirname(__file__) if "__file__" in globals() else os.getcwd()
@@ -100,3 +102,4 @@ if st.button('Predict'):
             st.header("Spam")
         else:
             st.header("Not Spam")
+
